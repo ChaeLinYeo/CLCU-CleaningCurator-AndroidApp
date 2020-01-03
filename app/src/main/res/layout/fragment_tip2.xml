@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mainview.TipPageB"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="412dp"
+        android:layout_height="67dp"
+        android:src="@drawable/bottombar_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="412dp"
+        android:layout_height="58dp"
+        android:src="@drawable/main12_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="411dp"
+        android:layout_height="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingLeft="50dp"
+                android:paddingRight="40dp"
+                android:text="침실" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="거실" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="세탁" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="부엌" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="화장실" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button27"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="54dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="0dp"
+        android:text="난이도순"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <Button
+        android:id="@+id/button28"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorWhite"
+        android:text="조회순"
+        android:textColor="#568FF9"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="|"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main12_2"
+                android:background="@color/colorWhite"
+                android:onClick="onClick"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main12_3"
+                android:background="@color/colorWhite"/>
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main12_4"
+                android:background="@color/colorWhite" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main12_5"
+                android:background="@color/colorWhite"/>
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_5" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

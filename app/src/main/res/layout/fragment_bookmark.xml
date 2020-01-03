@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mainview.BookmarkPage">
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="right|center_vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:text="편집"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="406dp"
+        android:layout_height="335dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button29">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_3" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_5" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_4" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main12_5" />
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/카테고리">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="100dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main11_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="77dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main11_3" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="93dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/main11_4" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/즐겨찾기"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/main14_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/카테고리"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom|center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="카테고리"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/즐겨찾기" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

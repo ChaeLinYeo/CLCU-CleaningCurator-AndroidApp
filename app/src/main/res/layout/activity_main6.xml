@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="start.Main6Activity"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:id="@+id/skipbutton2"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginRight="24dp"
+        android:background="#00ff0000"
+        android:onClick="onClick"
+
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="월요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+
+        android:onClick="onClick"/>
+
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="화요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="수요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/button_bg"
+        android:text="목요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="금요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="토요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="일요일마다"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/startbutton3"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="58dp"
+        android:background="#F2F2F2"
+
+        android:text="MORE"
+        android:textColor="#868686"
+        android:textSize="20sp"
+
+        android:onClick="onClick"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:src="@drawable/clcubar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/main6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!--**요일별 버튼 누르면 체크된 상태의 요일별 이미지 뜨도록 만들면 될 듯!
+    체크된 상태의 요일별 이미지는 디대분한테 요청드리자**-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

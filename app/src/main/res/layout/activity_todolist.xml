@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mainview.activity_todolist"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:id="@+id/편집_버튼2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="62dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="333dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorWhite"
+        android:text="편집"
+        android:textColor="#535353"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView3" />
+
+    <CalendarView
+        android:id="@+id/calendarView3"
+        android:layout_width="433dp"
+        android:layout_height="148dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:theme="@style/CalendarViewTheme"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="411dp"
+        android:layout_height="78dp"
+        android:background="@color/colorbackground1"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="8월"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="1. 내 방 청소하기"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="2. 빨래하기"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="3. 쓰레기 봉투 사기"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="4. 창문열기"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="5. 옷정리"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="6. 생활구역 청소"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="7. 바닥 청소"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="8. 주방 청소"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

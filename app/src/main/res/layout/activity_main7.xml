@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="start.Main7Activity"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:id="@+id/startbutton4"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="58dp"
+        android:background="#282DF9"
+
+        android:text="완료!"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+        android:onClick="onClick"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:src="@drawable/clcubar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:src="@drawable/main7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="476dp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="드럼 세탁기"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="일반 세탁기"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="가스레인지"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="인덕션"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="배기 후드"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="세면대"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="신발장"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="옷장"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="서랍장"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="정수기"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="침대"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="침대"
+                android:textColor="#4D4D4D"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
